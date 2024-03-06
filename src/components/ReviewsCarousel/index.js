@@ -1,4 +1,3 @@
-// Write your code here
 import './index.css'
 import {Component} from 'react'
 
@@ -40,20 +39,26 @@ class ReviewsCarousel extends Component {
           <div className="curosal-container">
             <button
               type="button"
-              testid="leftArrow"
+              data-testid="leftArrow"
               className="left-arrow"
               onClick={this.onLeftReview}
             >
-              <img src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png" alt = "left arrow" />
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
+                alt="left arrow"
+              />
             </button>
-            <img src={imgUrl} alt="review img" />
+            <img src={imgUrl} alt={username} />
             <button
               type="button"
-              testid="rightArrow"
+              data-testid="rightArrow"
               className="right-arrow"
               onClick={this.onRightReview}
             >
-              <img src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png" alt = "right arrow" />
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
+                alt="right arrow"
+              />
             </button>
             <p className="name">{username}</p>
             <p className="company-name">{companyName}</p>
@@ -66,3 +71,4 @@ class ReviewsCarousel extends Component {
 }
 
 export default ReviewsCarousel
+
